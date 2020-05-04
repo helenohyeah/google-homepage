@@ -1,40 +1,145 @@
 /* CSS Style for Google Homepage */
 
 html, body {
-    height:100%;
+    height:78vh;
+    background: white;
+    font-family: arial,sans-serif;
 }
 
 h1 {
-    font-family: arial,sans-serif;
     font-size: 13px;
     color: #000;
     opacity: 0.75;
     margin: 0 15px 0 0;
 }
 
-div.nav {
-    width: 100%;
-    height: 4em;
-    background:orange;
+.nav {
+    width: 100vw;
+    height: 8vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-div.nav div.nav-left {
+.nav-left {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin: 0 20px 0 20px;
 }
 
-div.nav div.nav-right {
+.nav-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin: 0 20px 0 20px;
 }
 
-div.icons img {
+.icons img {
     width: 2em;
     height: 2em;
+    margin: 0 4px 0 4px;
+}
+
+.body {
+    width: 100vw;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-logo {
+    margin: 20px 0 20px 0;
+}
+
+input {
+    width: 30vw;
+    outline: none;
+    border: 0.5px solid #d9d9d9;
+    border-radius: 20px;
+    padding: 12px 12px 12px 40px;
+    background-image: url(../Images/search-icon.png);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    margin: 10px 0 30px 0;
+}
+
+input:focus {
+    box-shadow: 0 0 0 1px #cccccc;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    display: inline-block;
+    border: 0;
+    outline: none;
+    background-color: #f2f2f2;
+    padding: 10px 14px 10px 14px;
+    margin: 0 8px 24px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #595959;
+}
+
+p1 {
+    font-size: 13px;
+}
+
+.covid-cta {
+    margin: 0 0 50px 0;
+}
+
+.language-cta {
+    margin: 10px 0 100px 0;
+}
+
+footer {
+    width: 100vw;
+    height: 14vh;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+
+.country {
+    padding: 1em 20px 1em 20px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: #f2f2f2;
+    color: #595959;
+    font-size: 15px;
+}
+
+.bot-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.bot-nav-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.bot-nav-right {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    padding: 1em 20px 2em 20px;
+    background-color: #f2f2f2;
+    color: #595959;
+    font-size: 15px;
+}
+
+a.bot-nav-left {
+    color: red;
 }
